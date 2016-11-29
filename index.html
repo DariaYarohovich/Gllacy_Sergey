@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!--Сайт на русском языке-->
 <head>
 	<meta charset="UTF-8">
 	<title>Gllacy Shop</title>
@@ -7,9 +7,9 @@
 	<meta name="keywords" content="">
 </head>
 <body>
-	<header class="main-header">
+	<header class="main-header"> <!-- Можно оставить только одну обертку: header class="main-header" или div class="container" -->
 		<div class="container">
-			<div class="main-logo">
+			<div class="main-logo"> <!-- Если верстка по БЭМу, то названия элементов блока должны идти через "__": main-header__logo -->
 				<img src="" alt="" width="" height="">
 			</div>
 			<nav class="main-navigation">
@@ -19,9 +19,9 @@
 					<li><a href="#">О компании</a></li>
 				</ul>
 			</nav>
-			<div class="search"></div>
+			<div class="search"></div> <!-- Три следующих элемента лучше обернуть в один блок -->
 			<div class="user-login">
-				<a href="#">Вход</a>
+				<a href="#">Вход</a><!-- Если будешь оборачивать, то отдельный div здесь не нужен -->
 			</div>
 			<div class="user-cart">
 				<a href="#">Пусто</a>
@@ -48,23 +48,19 @@
 			</div>
 		</article>
 		<article class="promo">
-			<section class="promo__block1">
+			<section class="promo__block1"> <!-- элемент + модификатор -->
 				<b>Малинка даром!</b>
-				<p>
-					При покупке 2ух кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.
-				</p>
+				<p>При покупке 2ух кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 				<a class="btn promo__button">Хочу варенье!</a>
 			</section>
-			<section class="promo__block2">
+			<section class="promo__block2"> <!-- элемент + модификатор -->
 				<b>Шоколадки даром!</b>
-				<p>
-					При покупке 2ух кг пломбира, добавим в ваш заказ банку вкуснейшей шоколадной присыпки совершенно бесплатно.
-				</p>
+				<p>При покупке 2ух кг пломбира, добавим в ваш заказ банку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 				<a class="btn promo__button">Хочу варенье!</a>
 			</section>
 		</article>
 		<section class="products-list">
-			<article class="product">
+			<article class="product"> <!-- Вот здесь много divов -->
 				<div class="product__label">Хит</div>
 				<div class="product__image">
 					<img src="" alt="" width="" height="">
@@ -72,7 +68,7 @@
 				<div class="product__price">
 					380<span>Р/кг</span>
 				</div>
-				<div class="product__name">
+				<div class="product__name"> <!-- Ссылка -->
 					<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
 				</div>	
 			</article>
@@ -114,11 +110,11 @@
 			</article>
 		</section>
 		<article class="advantages">
-			<h1>
+			<h1> <!-- Это не главный заголовок страницы -->
 				Магазин Глейси - это офлайн и онлайн магазин по продаже мороженного собственного производства на развес
 			</h1>
-			<div class="advantages__advantage">
-				<img src="" alt="" width="" height="">
+			<div class="advantages__advantage"> <!-- advantages__item -->
+				<img src="" alt="" width="" height=""> <!-- В родительский блок добавить модификатор, изображение в bg-image запихнуть -->
 				<p>
 					Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
 				</p>
@@ -142,9 +138,9 @@
 				</p>
 			</div>
 		</article>
-		<article class="blog-news">
+		<article class="blog-news"> <!-- Обернуть в один блок со следующим -->
 			<span>Новое в нашем блоге</span>
-			<p>
+			<p> <!-- Можно без р -->
 				<a href="#">10 способов серверовки фруктовых щербетов к столу</a>
 			</p>
 		</article>
@@ -167,14 +163,14 @@
 					<strong>8 812 450-25-25</strong><br>
 					(с 10 до 20 ежедневно)
 				</p>
-				<a class="btn map__button">Форма обратной связи</a>
+				<a class="btn map__button">Форма обратной связи</a> <!-- Для кнопок a или button -->>
 			</section>
 		</article>
 	</main>
 	<footer class="main-footer">
 		<div class="container">
 			<div class="social-icons">
-				<div class="social-icons__tw"></div>
+				<div class="social-icons__tw"></div> <!-- элемент + модификатор, i -->
 				<div class="social-icons__in"></div>
 				<div class="social-icons__fb"></div>
 				<div class="social-icons__vk"></div>
@@ -182,7 +178,7 @@
 			<nav class="footer-navigation">
 				<ul>
 					<li>
-						<img src="">
+						<img src=""> <!-- Можно для li создать отдельный класс с active, для которого в bg эту картинку добавить и переключать его по нажатию -->
 					    <a href="#"><b>Для поставщиков</b></a>
 					</li>
 					<li><a href="#">О производстве</a></li>
@@ -191,7 +187,7 @@
 					<li><a href="#">Наши документы</a></li>
 					<li><a href="#">Экологические стандарты</a></li>
 				</ul>
-			</nav>
+			</nav> <!-- уточнить -->
 			<div class="developers">
 				<img src="" alt="">
 				<a href="#">Сделано в htmlacademy &#169; 2016</a>

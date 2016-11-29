@@ -45,7 +45,7 @@
 		<h1>Сливочное морожение</h1>
 		<section class="filter-items">
 			<form class="filter-items__form" action="#" method="post">
-				<div class="filter-items__sort">
+				<div class="filter-items__sort"> <!-- у всех фильттров и названий одинаковая стилистка, т.е. им можно давать общий класс элемента + модификатор при необходимости -->
 					<span>Сортировка</span>
 						<select name="sort">
 							<option>По популярности</option>
@@ -53,7 +53,7 @@
 						</select>
 				</div>
 				<div class="filter-items__price">
-					<div class="filter-items__price-name">
+					<div class="filter-items__price-name"> <!-- Здесь название обернуто в отдельный блок. Почему? -->
 						<span>Цена: <i>100</i>руб. - <i>500</i>руб.</span>
 					</div>
 					<div class="filter-items__price-rollers">
@@ -64,7 +64,7 @@
 				<div class="filter-items__fat">
 					<span>Жирность</span>
 					<label><input type="radio" name="fat" value="0">0%</label>
-					<label><input type="radio" name="fat" value="до 10%" checked="">до 10%/label>
+					<label><input type="radio" name="fat" value="до 10%" checked="">до 10%</label>
 					<label><input type="radio" name="fat" value="до 30%">до 30%</label>
 					<label><input type="radio" name="fat" value="выше 30%">выше 30%</label>
 				</div>
@@ -75,11 +75,11 @@
 					<label><input type="checkbox" name="fruits">Фрукты</label>
 					<label><input type="checkbox" name="syrups">Сиропы</label>
 					<label><input type="checkbox" name="jams">Джемы</label>
-					<button class="filter-items__filler-button" type="button">Применить</button>
+					<button class="filter-items__filler-button" type="button">Применить</button> <!-- Не стоит кнопку запихивать в блок какого-то фильтра -->
 				</div>
 			</form>
 		</section>
-		<section class="products-list">
+		<section class="products-list"> <!-- Удобно: обертка - products, товар - products__item -->
 			<article class="product">
 				<div class="product__label">Хит</div>
 				<div class="product__image">
@@ -131,14 +131,13 @@
 		</section>
 		<div class="pagination">
 			<ul>
-				<li class="pagination__arrow"><a href="#"></a></li>
+				<li class="pagination__arrow"><a href="#"></a></li> <!-- pagination__arrow--prev -->
 				<li class="pagination__number_activ"><a href="#">1</a></li>
 				<li><a href="#">2</a></li>
 				<li><a href="#">3</a></li>
-				<li><a href="#"></a></li>
 				<li><a href="#">4</a></li>
-				<li><a href="#">4</a></li>
-				<li class="pagination__arrow pagination__arrow_activ "><a href="#"></a></li>
+				<li><a href="#">5</a></li>
+				<li class="pagination__arrow pagination__arrow_activ "><a href="#"></a></li> <!-- pagination__arrow--next  - для стилизации поворота -->
 			</ul>
 		</div>	
 	</main>
