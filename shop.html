@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Gllacy Shop - Items List</title>
@@ -7,51 +7,65 @@
 	<meta name="keywords" content="">
 </head>
 <body>
-	<header class="main-header">
-		<div class="container">
-			<div class="main-logo">
-				<img src="" alt="" width="" height="">
+	<header class="main-header container">
+			<div class="main-header__main-logo">
+				<img class="main-header__logo-img" src="" alt="" width="" height="">
 			</div>
 			<nav class="main-navigation">
-				<ul>
-					<li><a href="#">Каталог</a></li>
-					<li><a href="#">Доставка и оплата</a></li>
-					<li><a href="#">О компании</a></li>
+				<ul class="main-navigation__list">
+					<li class="main-navigation__list-string"><a href="#">Каталог</a></li>
+					<li class="main-navigation__list-string"><a href="#">Доставка и оплата</a></li>
+					<li class="main-navigation__list-string"><a href="#">О компании</a></li>
 				</ul>
 			</nav>
-			<div class="search"></div>
-			<div class="user-login">
-				<a href="#">Вход</a>
-			</div>
-			<div class="user-cart">
-				<a href="#">2 товара</a>
+			<div class="user-panel">
+				<div class="user-panel__search"></div>
+				<div class="user-panel__user-login">
+					<a href="#">Вход</a>
+				</div>
+				<div class="user-panel__user-cart">
+					<a href="#">Пусто</a>
+				</div>
 			</div>
 			<div class="header-contacts">
-				<p>
+				<p class="header-contacts__work-time">
 					c 10 до 20 ежедневно,
-					<span>8 812 450-25-25</span>
+					<span class="header-contacts__tel">8 812 450-25-25</span>
 				</p>
 			</div>
-		</div>
 	</header>
 	<main class="container">
 		<div class="breadcrumbs">
-			<ul>
-				<li><a href="#">Главная</a></li>
-				<li><a href="#">Каталог</a></li>
-				<li>Сливочное</li>
+			<ul class="breadcrumbs__list">
+				<li class="breadcrumbs__item">
+					<a class="breadcrumbs__link" href="#">Главная</a>
+				</li>
+				<li class="breadcrumbs__item">
+					<a class="breadcrumbs__link" href="#">Каталог</a>
+				</li>
+				<li class="breadcrumbs__item">Сливочное</li>
 			</ul>
 		</div>
+<<<<<<< HEAD
 		<h1>Сливочное морожение</h1>
 		<section class="filter-items">
 			<form class="filter-items__form" action="#" method="post">
 				<div class="filter-items__sort"> <!-- у всех фильттров и названий одинаковая стилистка, т.е. им можно давать общий класс элемента + модификатор при необходимости -->
 					<span>Сортировка</span>
 						<select name="sort">
+=======
+		<h1 class="page-title">Сливочное морожение</h1>
+		<section class="filter">
+			<form class="filter__form" action="#" method="post">
+				<div class="filter__block filter__block_sort">
+					<span class="filter__name">Сортировка</span>
+						<select class="filter__select" name="sort">
+>>>>>>> 9fa4421c625949566cf5480393d42d620488bcbd
 							<option>По популярности</option>
 							<option>По калорийности</option>
 						</select>
 				</div>
+<<<<<<< HEAD
 				<div class="filter-items__price">
 					<div class="filter-items__price-name"> <!-- Здесь название обернуто в отдельный блок. Почему? -->
 						<span>Цена: <i>100</i>руб. - <i>500</i>руб.</span>
@@ -76,60 +90,98 @@
 					<label><input type="checkbox" name="syrups">Сиропы</label>
 					<label><input type="checkbox" name="jams">Джемы</label>
 					<button class="filter-items__filler-button" type="button">Применить</button> <!-- Не стоит кнопку запихивать в блок какого-то фильтра -->
+=======
+				<div class="filter__block filter__block_price">
+					<span class="filter__name">Цена: <i>100</i>руб. - <i>500</i>руб.</span>
+					<div class="filter__price-rollers">
+						<span class="filter__roller1"></span>
+						<span class="filter__roller2"></span>
+					</div>
 				</div>
+				<div class="filter__block filter__block_fat">
+					<span class="filter__name">Жирность</span>
+					<label class="filter__label">
+						<input class="filter__radio" type="radio" name="fat" value="0">0%
+					</label>
+					<label class="filter__label">
+						<input class="filter__radio" type="radio" name="fat" value="до 10%" checked="">до 10%
+					</label>
+					<label class="filter__label">
+						<input class="filter__radio" type="radio" name="fat" value="до 30%">до 30%
+					</label>
+					<label class="filter__label">
+						<input class="filter__radio" type="radio" name="fat" value="выше 30%">выше 30%
+					</label>
+				</div>
+				<div class="filter__block filter__block_filler">
+					<span class="filter__name">Наполнители:</span>
+					<label class="filter__label">
+						<input class="filter__checkbox" type="checkbox" name="choco" checked>Шоколадные</label>
+					<label class="filter__label">
+						<input class="filter__checkbox" type="checkbox" name="sugar" checked>Сахарные присыпки</label>
+					<label class="filter__label">
+						<input class="filter__checkbox" type="checkbox" name="fruits">Фрукты</label>
+					<label class="filter__label">
+						<input class="filter__checkbox" type="checkbox" name="syrups">Сиропы</label>
+					<label class="filter__label">
+						<input class="filter__checkbox" type="checkbox" name="jams">Джемы</label>
+>>>>>>> 9fa4421c625949566cf5480393d42d620488bcbd
+				</div>
+				<button class="filter__button" type="button">Применить</button>
 			</form>
 		</section>
+<<<<<<< HEAD
 		<section class="products-list"> <!-- Удобно: обертка - products, товар - products__item -->
+=======
+		<section class="products">
+>>>>>>> 9fa4421c625949566cf5480393d42d620488bcbd
 			<article class="product">
-				<div class="product__label">Хит</div>
-				<div class="product__image">
-					<img src="" alt="" width="" height="">
+				<span class="product__label">Хит</span>
+				<div class="product__image-block">
+					<img class="product__image" src="" alt="" width="" height="">
 				</div>
 				<div class="product__price">
-					380<span>Р/кг</span>
+					380
+					<span class="product__units">Р/кг</span>
 				</div>
-				<div class="product__name">
-					<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-				</div>	
+				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 			</article>
 			<article class="product">
-				<div class="product__label">Хит</div>
-				<div class="product__image">
-					<img src="" alt="" width="" height="">
+				<span class="product__label">Хит</span>
+				<div class="product__image-block">
+					<img class="product__image" src="" alt="" width="" height="">
 				</div>
 				<div class="product__price">
-					380<span>Р/кг</span>
+					380
+					<span class="product__units">Р/кг</span>
 				</div>
-				<div class="product__name">
-					<p>Сливочно-кофейное с кусочками шоколада</p>
-				</div>	
+				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 			</article>
 			<article class="product">
-				<div class="product__label">Хит</div>
-				<div class="product__image">
-					<img src="" alt="" width="" height="">
+				<span class="product__label">Хит</span>
+				<div class="product__image-block">
+					<img class="product__image" src="" alt="" width="" height="">
 				</div>
 				<div class="product__price">
-					380<span>Р/кг</span>
+					380
+					<span class="product__units">Р/кг</span>
 				</div>
-				<div class="product__name">
-					<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
-				</div>	
+				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 			</article>
 			<article class="product">
-				<div class="product__label">Хит</div>
-				<div class="product__image">
-					<img src="" alt="" width="" height="">
+				<span class="product__label">Хит</span>
+				<div class="product__image-block">
+					<img class="product__image" src="" alt="" width="" height="">
 				</div>
 				<div class="product__price">
-					380<span>Р/кг</span>
+					380
+					<span class="product__units">Р/кг</span>
 				</div>
-				<div class="product__name">
-					<p>Сливочное крем-брюле с карамелоной подливкой</p>
-				</div>	
+				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 			</article>
 		</section>
 		<div class="pagination">
+<<<<<<< HEAD
 			<ul>
 				<li class="pagination__arrow"><a href="#"></a></li> <!-- pagination__arrow--prev -->
 				<li class="pagination__number_activ"><a href="#">1</a></li>
@@ -138,32 +190,42 @@
 				<li><a href="#">4</a></li>
 				<li><a href="#">5</a></li>
 				<li class="pagination__arrow pagination__arrow_activ "><a href="#"></a></li> <!-- pagination__arrow--next  - для стилизации поворота -->
+=======
+			<ul class="pagination__list">
+				<li class="pagination__arrow pagination__arrow_prev pagination__arrow_disabled"></li>
+				<li class="pagination__item pagination__item_activ"><a href="#">1</a></li>
+				<li class="pagination__item"><a href="#">2</a></li>
+				<li class="pagination__item"><a href="#">3</a></li>
+				<li class="pagination__item"><a href="#">4</a></li>
+				<li class="pagination__item"><a href="#">5</a></li>
+				<li class="pagination__item"><a href="#">6</a></li>
+				<li class="pagination__arrow pagination__arrow_next "><a href="#"></a></li>
+>>>>>>> 9fa4421c625949566cf5480393d42d620488bcbd
 			</ul>
 		</div>	
 	</main>
 	<footer class="main-footer">
 		<div class="container">
 			<div class="social-icons">
-				<div class="social-icons__tw"></div>
-				<div class="social-icons__in"></div>
-				<div class="social-icons__fb"></div>
-				<div class="social-icons__vk"></div>
+				<a class="social-icons__icon  social-icons__icon_tw" href="#"></a>
+				<a class="social-icons__icon  social-icons__icon_in" href="#"></a>
+				<a class="social-icons__icon  social-icons__icon_fb" href="#"></a>
+				<a class="social-icons__icon  social-icons__icon_vk" href="#"></a>
 			</div>
 			<nav class="footer-navigation">
-				<ul>
-					<li>
-						<img src="">
+				<ul class="footer-navigation__list">
+					<li class="footer-navigation__list-item footer-navigation__list-item_bg-heart">
 					    <a href="#"><b>Для поставщиков</b></a>
 					</li>
-					<li><a href="#">О производстве</a></li>
+					<li class="footer-navigation__list-item"><a href="#">О производстве</a></li>
 				</ul>
-				<ul>
-					<li><a href="#">Наши документы</a></li>
-					<li><a href="#">Экологические стандарты</a></li>
+				<ul class="footer-navigation__list">
+					<li class="footer-navigation__list-item"><a href="#">Наши документы</a></li>
+					<li class="footer-navigation__list-item"><a href="#">Экологические стандарты</a></li>
 				</ul>
 			</nav>
 			<div class="developers">
-				<img src="" alt="">
+				<img class="developers__img" src="" alt="">
 				<a href="#">Сделано в htmlacademy &#169; 2016</a>
 			</div>
 		</div>
@@ -171,3 +233,5 @@
 	
 </body>
 </html>
+
+
