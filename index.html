@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="en"> <!--Сайт на русском языке-->
-=======
 <html lang="ru">
->>>>>>> 9fa4421c625949566cf5480393d42d620488bcbd
 <head>
 	<meta charset="UTF-8">
 	<title>Gllacy Shop</title>
@@ -11,16 +7,9 @@
 	<meta name="keywords" content="">
 </head>
 <body>
-<<<<<<< HEAD
-	<header class="main-header"> <!-- Можно оставить только одну обертку: header class="main-header" или div class="container" -->
-		<div class="container">
-			<div class="main-logo"> <!-- Если верстка по БЭМу, то названия элементов блока должны идти через "__": main-header__logo -->
-				<img src="" alt="" width="" height="">
-=======
 	<header class="main-header container">
 			<div class="main-header__main-logo">
 				<img class="main-header__logo-img" src="" alt="" width="" height="">
->>>>>>> 9fa4421c625949566cf5480393d42d620488bcbd
 			</div>
 			<nav class="main-navigation">
 				<ul class="main-navigation__list">
@@ -29,14 +18,6 @@
 					<li class="main-navigation__list-string"><a href="#">О компании</a></li>
 				</ul>
 			</nav>
-<<<<<<< HEAD
-			<div class="search"></div> <!-- Три следующих элемента лучше обернуть в один блок -->
-			<div class="user-login">
-				<a href="#">Вход</a><!-- Если будешь оборачивать, то отдельный div здесь не нужен -->
-			</div>
-			<div class="user-cart">
-				<a href="#">Пусто</a>
-=======
 			<div class="user-panel">
 				<div class="user-panel__search"></div>
 				<div class="user-panel__user-login">
@@ -45,7 +26,6 @@
 				<div class="user-panel__user-cart">
 					<a href="#">Пусто</a>
 				</div>
->>>>>>> 9fa4421c625949566cf5480393d42d620488bcbd
 			</div>
 			<div class="header-contacts">
 				<p class="header-contacts__work-time">
@@ -67,34 +47,15 @@
 				<input type="radio" name="slide1">
 			</div>
 		</article>
-<<<<<<< HEAD
-		<article class="promo">
-			<section class="promo__block1"> <!-- элемент + модификатор -->
-				<b>Малинка даром!</b>
-				<p>При покупке 2ух кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-				<a class="btn promo__button">Хочу варенье!</a>
-			</section>
-			<section class="promo__block2"> <!-- элемент + модификатор -->
-				<b>Шоколадки даром!</b>
-				<p>При покупке 2ух кг пломбира, добавим в ваш заказ банку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-				<a class="btn promo__button">Хочу варенье!</a>
-			</section>
-		</article>
-		<section class="products-list">
-			<article class="product"> <!-- Вот здесь много divов -->
-				<div class="product__label">Хит</div>
-				<div class="product__image">
-					<img src="" alt="" width="" height="">
-=======
 		<div class="bloks-wrapper">
-			<section class="promo-block promo-block_raspb">
+			<section class="promo-block promo-block_raspb"> <!-- Уточнить -->
 				<b class="promo-block__title">Малинка даром!</b>
 				<p class="promo-block__desc">
 					При покупке 2ух кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.
 				</p>
 				<a class="promo-block__button btn">Хочу варенье!</a>
 			</section>
-			<section class="promo__block promo__block_choco">
+			<section class="promo-block promo-block_choco">
 				<b class="promo-block__title">Шоколадки даром!</b>
 				<p class="promo-block__desc">
 					При покупке 2ух кг пломбира, добавим в ваш заказ банку вкуснейшей шоколадной присыпки совершенно бесплатно.
@@ -107,19 +68,12 @@
 				<span class="product__label">Хит</span>
 				<div class="product__image-block">
 					<img class="product__image" src="" alt="" width="" height="">
->>>>>>> 9fa4421c625949566cf5480393d42d620488bcbd
 				</div>
 				<div class="product__price">
 					380
 					<span class="product__units">Р/кг</span>
 				</div>
-<<<<<<< HEAD
-				<div class="product__name"> <!-- Ссылка -->
-					<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-				</div>	
-=======
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
->>>>>>> 9fa4421c625949566cf5480393d42d620488bcbd
 			</article>
 			<article class="product">
 				<span class="product__label">Хит</span>
@@ -156,21 +110,11 @@
 			</article>
 		</section>
 		<article class="advantages">
-<<<<<<< HEAD
-			<h1> <!-- Это не главный заголовок страницы -->
-				Магазин Глейси - это офлайн и онлайн магазин по продаже мороженного собственного производства на развес
-			</h1>
-			<div class="advantages__advantage"> <!-- advantages__item -->
-				<img src="" alt="" width="" height=""> <!-- В родительский блок добавить модификатор, изображение в bg-image запихнуть -->
-				<p>
-=======
 			<h1 class="advantages__title">
 				Магазин Глейси - это офлайн и онлайн магазин по продаже мороженного собственного производства на развес
-			</h1>
-			
-			<div class="advantages__item advantages__item_bg-icecream">
+			</h1>	
+			<div class="advantages__item advantages__item_bg-icecream"> <!-- здесь не нужно вложенности -->
 				<p class="advantages__desc">
->>>>>>> 9fa4421c625949566cf5480393d42d620488bcbd
 					Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
 				</p>
 			</div>
@@ -191,30 +135,24 @@
 			</div>
 			
 		</article>
-<<<<<<< HEAD
-		<article class="blog-news"> <!-- Обернуть в один блок со следующим -->
-			<span>Новое в нашем блоге</span>
-			<p> <!-- Можно без р -->
-=======
 		<div class="bloks-wrapper">
 			<article class="blog-news">
-			<span class="blog-news__title">Новое в нашем блоге</span>
-			<p class="blog-news__desc">
->>>>>>> 9fa4421c625949566cf5480393d42d620488bcbd
-				<a href="#">10 способов серверовки фруктовых щербетов к столу</a>
-			</p>
-		</article>
-		<article class="subscribe">
-			<p class="subscribe__desc">
-				Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) 
-			</p>
-			<form class="subscribe__form" action="#" method="post">
-				<input class="subscribe__input" type="text" name="email" placeholder="Электронная почта">
-				<button class="subscribe__button btn" type="submit">Отправить</button>
-			</form>
-		</article>
+				<span class="blog-news__title">Новое в нашем блоге</span>
+				<p class="blog-news__desc">
+					<a href="#">10 способов серверовки фруктовых щербетов к столу</a>
+				</p>
+			</article>
+			<article class="subscribe">
+				<p class="subscribe__desc">
+					Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) 
+				</p>
+				<form class="subscribe__form" action="#" method="post">
+					<input class="subscribe__input" type="text" name="email" placeholder="Электронная почта">
+					<button class="subscribe__button btn" type="submit">Отправить</button>
+				</form>
+			</article>
 		</div>
-		<article class="map">
+		<article class="map"> <!--Почему article? -->
 			<section class="map__address-block">
 				<p class="map__address-details">
 					Адрес главного офиса и<br>
@@ -224,28 +162,13 @@
 					<strong class="map__address-main">8 812 450-25-25</strong><br>
 					(с 10 до 20 ежедневно)
 				</p>
-<<<<<<< HEAD
-				<a class="btn map__button">Форма обратной связи</a> <!-- Для кнопок a или button -->>
-=======
 				<a class="map__button btn">Форма обратной связи</a>
->>>>>>> 9fa4421c625949566cf5480393d42d620488bcbd
 			</section>
 		</article>
 	</main>
 	<footer class="main-footer">
 		<div class="container">
 			<div class="social-icons">
-<<<<<<< HEAD
-				<div class="social-icons__tw"></div> <!-- элемент + модификатор, i -->
-				<div class="social-icons__in"></div>
-				<div class="social-icons__fb"></div>
-				<div class="social-icons__vk"></div>
-			</div>
-			<nav class="footer-navigation">
-				<ul>
-					<li>
-						<img src=""> <!-- Можно для li создать отдельный класс с active, для которого в bg эту картинку добавить и переключать его по нажатию -->
-=======
 				<a class="social-icons__icon  social-icons__icon_tw" href="#"></a>
 				<a class="social-icons__icon  social-icons__icon_in" href="#"></a>
 				<a class="social-icons__icon  social-icons__icon_fb" href="#"></a>
@@ -254,7 +177,6 @@
 			<nav class="footer-navigation">
 				<ul class="footer-navigation__list">
 					<li class="footer-navigation__list-item footer-navigation__list-item_bg-heart">
->>>>>>> 9fa4421c625949566cf5480393d42d620488bcbd
 					    <a href="#"><b>Для поставщиков</b></a>
 					</li>
 					<li class="footer-navigation__list-item"><a href="#">О производстве</a></li>
@@ -263,7 +185,7 @@
 					<li class="footer-navigation__list-item"><a href="#">Наши документы</a></li>
 					<li class="footer-navigation__list-item"><a href="#">Экологические стандарты</a></li>
 				</ul>
-			</nav> <!-- уточнить -->
+			</nav>
 			<div class="developers">
 				<img class="developers__img" src="" alt="">
 				<a href="#">Сделано в htmlacademy &#169; 2016</a>
