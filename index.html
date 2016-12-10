@@ -10,28 +10,30 @@
 </head>
 <body>
 	<header class="main-header container">
-			<div class="main-header__main-logo">
-				<img class="main-header__logo-img" src="img/Logo.svg" alt="логотип глейси">
-			</div>
-			<nav class="main-navigation">
-				<ul class="main-navigation__list">
-					<li class="main-navigation__list-string"><a href="#">Каталог</a></li>
-					<li class="main-navigation__list-string"><a href="#">Доставка и оплата</a></li>
-					<li class="main-navigation__list-string"><a href="#">О компании</a></li>
-				</ul>
-			</nav>
-			<div class="user-panel">
-				<div class="user-panel__search"></div>
-				<div class="user-panel__user-login">
-					<a href="#">Вход</a>
-				</div>
-				<div class="user-panel__user-cart">
-					<a href="#">Пусто</a>
+			<div class="main-header-wrapper">
+				<nav class="main-navigation">
+					<ul class="main-navigation__list">
+						<li class="main-navigation__list-string">
+							<a href="#"><img class="main-navigation__logo" src="img/Logo.svg" alt="логотип глейси"></a>
+						</li>
+						<li class="main-navigation__list-string"><a href="#">Каталог</a></li>
+						<li class="main-navigation__list-string"><a href="#">Доставка и оплата</a></li>
+						<li class="main-navigation__list-string"><a href="#">О компании</a></li>
+					</ul>
+				</nav>
+				<div class="user-panel">
+					<div class="user-panel__search"></div>
+					<div class="user-panel__user-login">
+						<a href="#">Вход</a>
+					</div>
+					<div class="user-panel__user-cart">
+						<a href="#">Пусто</a>
+					</div>
 				</div>
 			</div>
 			<div class="header-contacts">
 				<p class="header-contacts__work-time">
-					c 10 до 20 ежедневно,
+					c 10 до 20, ежедневно<br>
 					<span class="header-contacts__tel">8 812 450-25-25</span>
 				</p>
 			</div>
@@ -57,7 +59,7 @@
 				</p>
 				<a class="promo-block__button btn">Хочу варенье!</a>
 			</section>
-			<section class="promo__block promo__block_choco">
+			<section class="promo-block promo-block_choco">
 				<b class="promo-block__title">Шоколадки даром!</b>
 				<p class="promo-block__desc">
 					При покупке 2ух кг пломбира, добавим в ваш заказ банку вкуснейшей шоколадной присыпки совершенно бесплатно.
@@ -69,7 +71,7 @@
 			<article class="product">
 				<span class="product__label"></span>
 				<div class="product__image-block">
-					<img class="product__image" src="img/item1.png" alt="" width="200" height="200">
+					<img class="product__image" src="img/item1.png" alt="">
 				</div>
 				<div class="product__price">
 					380
@@ -80,7 +82,7 @@
 			<article class="product">
 				<span class="product__label"></span>
 				<div class="product__image-block">
-					<img class="product__image" src="img/item2.png" alt="" width="200" height="200">
+					<img class="product__image" src="img/item2.png" alt="">
 				</div>
 				<div class="product__price">
 					380
@@ -91,7 +93,7 @@
 			<article class="product">
 				<span class="product__label"></span>
 				<div class="product__image-block">
-					<img class="product__image" src="img/item3.png" alt="" width="200" height="200">
+					<img class="product__image" src="img/item3.png" alt="">
 				</div>
 				<div class="product__price">
 					380
@@ -102,7 +104,7 @@
 			<article class="product">
 				<span class="product__label"></span>
 				<div class="product__image-block">
-					<img class="product__image" src="img/item4.png" alt="" width="200" height="200">
+					<img class="product__image" src="img/item4.png" alt="">
 				</div>
 				<div class="product__price">
 					380
@@ -116,7 +118,8 @@
 				Магазин Глейси - это офлайн и онлайн магазин по продаже мороженного собственного производства на развес
 			</h1>
 			
-			<div class="advantages__item advantages__item_bg-icecream">
+			<div class="advantages-wrapper">
+				<div class="advantages__item advantages__item_bg-icecream">
 				<p class="advantages__desc">
 					Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
 				</p>
@@ -136,7 +139,7 @@
 					Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
 				</p>
 			</div>
-			
+			</div>
 		</article>
 		<div class="bloks-wrapper">
 			<article class="blog-news">
@@ -155,27 +158,30 @@
 			</form>
 		</article>
 		</div>
-		<article class="map">
+	</main>
+	<article class="map">
+		<div class="container">
 			<section class="map__address-block">
 				<p class="map__address-details">
 					Адрес главного офиса и<br>
-					офлайн магазина:
+					офлайн магазина:<br>
 					<strong class="map__address-main">ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
+				</p>
+				<p class="map__address-details">	
 					Для заказов по телефону:<br>
 					<strong class="map__address-main">8 812 450-25-25</strong><br>
 					(с 10 до 20 ежедневно)
 				</p>
 				<a class="map__button btn">Форма обратной связи</a>
 			</section>
+		</div>	
 		</article>
-	</main>
-	<footer class="main-footer">
-		<div class="container">
+	<footer class="main-footer container">
 			<div class="social-icons">
-				<a class="social-icons__icon  social-icons__icon_tw" href="#"></a>
-				<a class="social-icons__icon  social-icons__icon_in" href="#"></a>
-				<a class="social-icons__icon  social-icons__icon_fb" href="#"></a>
-				<a class="social-icons__icon  social-icons__icon_vk" href="#"></a>
+					<a class="social-icons__icon  social-icons__icon_tw" href="#"></a>
+					<a class="social-icons__icon  social-icons__icon_in" href="#"></a>
+					<a class="social-icons__icon  social-icons__icon_fb" href="#"></a>
+					<a class="social-icons__icon  social-icons__icon_vk" href="#"></a>
 			</div>
 			<nav class="footer-navigation">
 				<ul class="footer-navigation__list">
@@ -193,7 +199,6 @@
 				<img class="developers__img" src="img/developer-logo.png" alt="Логотип разработчиков" width="108" height="38">
 				<a href="#">Сделано в htmlacademy &#169; 2016</a>
 			</div>
-		</div>
 	</footer>
 	
 </body>
