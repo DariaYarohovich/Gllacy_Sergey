@@ -33,14 +33,13 @@ p, ul {
 
 .main-navigation__list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .main-navigation__list-string {
 	list-style-type: none;
-	margin-right: 30px;
-
 }
 
 .user-panel {
@@ -62,6 +61,11 @@ p, ul {
 	width: 100%;
 	box-sizing: border-box;
 	padding-top: 10px;
+}
+
+.main-slider__img {
+	max-width: 100%;
+    height: auto;
 }
 
 /*хрен знает как делаь там этот слайдер*/
@@ -186,12 +190,11 @@ p, ul {
 }
 
 .map__address-block {
-	margin-right: 30px;
-	margin-left: auto;
 	box-sizing: border-box;
 	min-height: 305px;
 	width: 303px;
 	padding: 31px 26px;
+	float: right;
 	background-color: lightgrey;
 }
 
@@ -204,6 +207,7 @@ p, ul {
 .main-footer {
 	display: flex;
 	justify-content: space-between;
+	padding-top: 35px;
 	background-color: lightgrey;
 }
 
@@ -225,4 +229,74 @@ p, ul {
 
 .developers__img {
 	display: block;
+}
+
+/* <================= list items page =================> */
+
+.breadcrumbs {
+	margin-top: 30px;
+}
+
+.breadcrumbs__list {
+	list-style-type: none;
+}
+
+.breadcrumbs__item {
+	display: inline-block;
+	padding-right: 22px;
+	background-color: lightgrey;
+}
+
+.page-title {
+	margin-top: 10px;
+	background-color: lightgrey;
+}
+
+.filter__form {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 862px;
+	background-color: lightgrey;
+	margin-bottom: 40px;
+
+}
+
+.filter__block {
+	margin-right: 15px;
+}
+
+.filter__wrapper {
+	padding: 15px;
+	background-color: lightblue;
+}
+
+.filter__name {
+	display: inline-block;
+	padding-left: 15px;
+	margin-bottom: 10px;
+}
+
+.filter__label {
+	display: inline-block;
+}
+
+.pagination {
+	margin-top: 60px;
+	margin-bottom: 37px;
+}
+
+.pagination__list {
+	display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+.pagination__item {
+	margin-right: 23px;
+}
+
+.pagination__item:last-child {
+	margin-right: 0;
 }

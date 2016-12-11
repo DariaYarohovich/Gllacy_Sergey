@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Gllacy Shop - Items List</title>
+	<title>Gllacy Shop</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
@@ -10,28 +10,30 @@
 </head>
 <body>
 	<header class="main-header container">
-			<div class="main-header__main-logo">
-				<img class="main-header__logo-img" src="img/Logo.svg" alt="Логотип глейси" >
-			</div>
-			<nav class="main-navigation">
-				<ul class="main-navigation__list">
-					<li class="main-navigation__list-string"><a href="#">Каталог</a></li>
-					<li class="main-navigation__list-string"><a href="#">Доставка и оплата</a></li>
-					<li class="main-navigation__list-string"><a href="#">О компании</a></li>
-				</ul>
-			</nav>
-			<div class="user-panel">
-				<div class="user-panel__search"></div>
-				<div class="user-panel__user-login">
-					<a href="#">Вход</a>
-				</div>
-				<div class="user-panel__user-cart">
-					<a href="#">Пусто</a>
+			<div class="main-header-wrapper">
+				<nav class="main-navigation">
+					<ul class="main-navigation__list">
+						<li class="main-navigation__list-string">
+							<a href="#"><img class="main-navigation__logo" src="img/Logo.svg" alt="логотип глейси"></a>
+						</li>
+						<li class="main-navigation__list-string"><a href="#">Каталог</a></li>
+						<li class="main-navigation__list-string"><a href="#">Доставка и оплата</a></li>
+						<li class="main-navigation__list-string"><a href="#">О компании</a></li>
+					</ul>
+				</nav>
+				<div class="user-panel">
+					<div class="user-panel__search"></div>
+					<div class="user-panel__user-login">
+						<a href="#">Вход</a>
+					</div>
+					<div class="user-panel__user-cart">
+						<a href="#">Пусто</a>
+					</div>
 				</div>
 			</div>
 			<div class="header-contacts">
 				<p class="header-contacts__work-time">
-					c 10 до 20 ежедневно,
+					c 10 до 20, ежедневно<br>
 					<span class="header-contacts__tel">8 812 450-25-25</span>
 				</p>
 			</div>
@@ -53,45 +55,53 @@
 			<form class="filter__form" action="#" method="post">
 				<div class="filter__block filter__block_sort">
 					<span class="filter__name">Сортировка</span>
-						<select class="filter__select" name="sort">
-							<option>По популярности</option>
-							<option>По калорийности</option>
-						</select>
+						<div class="filter__wrapper">
+							<select class="filter__select" name="sort">
+								<option>По популярности</option>
+								<option>По калорийности</option>
+							</select>
+						</div>
 				</div>
 				<div class="filter__block filter__block_price">
 					<span class="filter__name">Цена: <i>100</i>руб. - <i>500</i>руб.</span>
-					<div class="filter__price-rollers">
-						<span class="filter__roller1"></span>
-						<span class="filter__roller2"></span>
+					<div class="filter__wrapper">
+						<div class="filter__price-rollers">
+							<span class="filter__roller1"></span>
+							<span class="filter__roller2"></span>
+						</div>
 					</div>
 				</div>
 				<div class="filter__block filter__block_fat">
 					<span class="filter__name">Жирность</span>
-					<label class="filter__label">
-						<input class="filter__radio" type="radio" name="fat" value="0">0%
-					</label>
-					<label class="filter__label">
-						<input class="filter__radio" type="radio" name="fat" value="до 10%" checked="">до 10%
-					</label>
-					<label class="filter__label">
-						<input class="filter__radio" type="radio" name="fat" value="до 30%">до 30%
-					</label>
-					<label class="filter__label">
-						<input class="filter__radio" type="radio" name="fat" value="выше 30%">выше 30%
-					</label>
+					<div class="filter__wrapper">
+						<label class="filter__label">
+							<input class="filter__radio" type="radio" name="fat" value="0">0%
+						</label>
+						<label class="filter__label">
+							<input class="filter__radio" type="radio" name="fat" value="до 10%" checked="">до 10%
+						</label>
+						<label class="filter__label">
+							<input class="filter__radio" type="radio" name="fat" value="до 30%">до 30%
+						</label>
+						<label class="filter__label">
+							<input class="filter__radio" type="radio" name="fat" value="выше 30%">выше 30%
+						</label>
+					</div>
 				</div>
 				<div class="filter__block filter__block_filler">
 					<span class="filter__name">Наполнители:</span>
-					<label class="filter__label">
-						<input class="filter__checkbox" type="checkbox" name="choco" checked>Шоколадные</label>
-					<label class="filter__label">
-						<input class="filter__checkbox" type="checkbox" name="sugar" checked>Сахарные присыпки</label>
-					<label class="filter__label">
-						<input class="filter__checkbox" type="checkbox" name="fruits">Фрукты</label>
-					<label class="filter__label">
-						<input class="filter__checkbox" type="checkbox" name="syrups">Сиропы</label>
-					<label class="filter__label">
-						<input class="filter__checkbox" type="checkbox" name="jams">Джемы</label>
+					<div class="filter__wrapper">
+						<label class="filter__label">
+							<input class="filter__checkbox" type="checkbox" name="choco" checked>Шоколадные</label>
+						<label class="filter__label">
+							<input class="filter__checkbox" type="checkbox" name="sugar" checked>Сахарные присыпки</label>
+						<label class="filter__label">
+							<input class="filter__checkbox" type="checkbox" name="fruits">Фрукты</label>
+						<label class="filter__label">
+							<input class="filter__checkbox" type="checkbox" name="syrups">Сиропы</label>
+						<label class="filter__label">
+							<input class="filter__checkbox" type="checkbox" name="jams">Джемы</label>
+					</div>
 				</div>
 				<button class="filter__button" type="button">Применить</button>
 			</form>
@@ -100,7 +110,7 @@
 			<article class="product">
 				<span class="product__label"></span>
 				<div class="product__image-block">
-					<img class="product__image" src="img/item1.png" alt="" width="200" height="200">
+					<img class="product__image" src="img/item1.png" alt="">
 				</div>
 				<div class="product__price">
 					380
@@ -111,7 +121,7 @@
 			<article class="product">
 				<span class="product__label"></span>
 				<div class="product__image-block">
-					<img class="product__image" src="img/item2.png" alt="" width="200" height="200">
+					<img class="product__image" src="img/item2.png" alt="">
 				</div>
 				<div class="product__price">
 					380
@@ -122,7 +132,7 @@
 			<article class="product">
 				<span class="product__label"></span>
 				<div class="product__image-block">
-					<img class="product__image" src="img/item3.png" alt="" width="200" height="200">
+					<img class="product__image" src="img/item3.png" alt="">
 				</div>
 				<div class="product__price">
 					380
@@ -133,35 +143,122 @@
 			<article class="product">
 				<span class="product__label"></span>
 				<div class="product__image-block">
-					<img class="product__image" src="img/item4.png" alt="" width="200" height="200">
+					<img class="product__image" src="img/item4.png" alt="">
 				</div>
 				<div class="product__price">
 					380
 					<span class="product__units">Р/кг</span>
+				</div>
+				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+			</article>
+			<article class="product">
+				<span class="product__label"></span>
+				<div class="product__image-block">
+					<img class="product__image" src="img/item5.png" alt="">
+				</div>
+				<div class="product__price">
+					380
+					<span class="product__units">/кг</span>
+				</div>
+				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+			</article>
+			<article class="product">
+				<span class="product__label"></span>
+				<div class="product__image-block">
+					<img class="product__image" src="img/item6.png" alt="">
+				</div>
+				<div class="product__price">
+					380
+					<span class="product__units">/кг</span>
+				</div>
+				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+			</article>
+			<article class="product">
+				<span class="product__label"></span>
+				<div class="product__image-block">
+					<img class="product__image" src="img/item7.png" alt="">
+				</div>
+				<div class="product__price">
+					380
+					<span class="product__units">/кг</span>
+				</div>
+				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+			</article>
+			<article class="product">
+				<span class="product__label"></span>
+				<div class="product__image-block">
+					<img class="product__image" src="img/item8.png" alt="">
+				</div>
+				<div class="product__price">
+					380
+					<span class="product__units">/кг</span>
+				</div>
+				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+			</article>
+			<article class="product">
+				<span class="product__label"></span>
+				<div class="product__image-block">
+					<img class="product__image" src="img/item9.png" alt="">
+				</div>
+				<div class="product__price">
+					380
+					<span class="product__units">/кг</span>
+				</div>
+				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+			</article>
+			<article class="product">
+				<span class="product__label"></span>
+				<div class="product__image-block">
+					<img class="product__image" src="img/item10.png" alt="">
+				</div>
+				<div class="product__price">
+					380
+					<span class="product__units">/кг</span>
+				</div>
+				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+			</article>
+			<article class="product">
+				<span class="product__label"></span>
+				<div class="product__image-block">
+					<img class="product__image" src="img/item11.png" alt="">
+				</div>
+				<div class="product__price">
+					380
+					<span class="product__units">/кг</span>
+				</div>
+				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+			</article>
+			<article class="product">
+				<span class="product__label"></span>
+				<div class="product__image-block">
+					<img class="product__image" src="img/item12.png" alt="">
+				</div>
+				<div class="product__price">
+					380
+					<span class="product__units">/кг</span>
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 			</article>
 		</section>
 		<div class="pagination">
 			<ul class="pagination__list">
-				<li class="pagination__arrow pagination__arrow_prev pagination__arrow_disabled"></li>
+				<li class="pagination__item pagination__arrow_prev pagination__arrow_disabled"></li>
 				<li class="pagination__item pagination__item_activ"><a href="#">1</a></li>
 				<li class="pagination__item"><a href="#">2</a></li>
 				<li class="pagination__item"><a href="#">3</a></li>
 				<li class="pagination__item"><a href="#">4</a></li>
 				<li class="pagination__item"><a href="#">5</a></li>
 				<li class="pagination__item"><a href="#">6</a></li>
-				<li class="pagination__arrow pagination__arrow_next "><a href="#"></a></li>
+				<li class="pagination__item pagination__arrow_next "><a href="#"></a></li>
 			</ul>
 		</div>	
 	</main>
-	<footer class="main-footer">
-		<div class="container">
+	<footer class="main-footer container">
 			<div class="social-icons">
-				<a class="social-icons__icon  social-icons__icon_tw" href="#"></a>
-				<a class="social-icons__icon  social-icons__icon_in" href="#"></a>
-				<a class="social-icons__icon  social-icons__icon_fb" href="#"></a>
-				<a class="social-icons__icon  social-icons__icon_vk" href="#"></a>
+					<a class="social-icons__icon  social-icons__icon_tw" href="#"></a>
+					<a class="social-icons__icon  social-icons__icon_in" href="#"></a>
+					<a class="social-icons__icon  social-icons__icon_fb" href="#"></a>
+					<a class="social-icons__icon  social-icons__icon_vk" href="#"></a>
 			</div>
 			<nav class="footer-navigation">
 				<ul class="footer-navigation__list">
@@ -176,13 +273,13 @@
 				</ul>
 			</nav>
 			<div class="developers">
-				<img class="developers__img" src="" alt="">
+				<img class="developers__img" src="img/developer-logo.png" alt="Логотип разработчиков" width="108" height="38">
 				<a href="#">Сделано в htmlacademy &#169; 2016</a>
 			</div>
-		</div>
 	</footer>
 	
 </body>
 </html>
+
 
 
