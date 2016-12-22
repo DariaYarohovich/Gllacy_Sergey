@@ -10,7 +10,12 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-	<header class="main-header container">
+<input type="radio" id="btn1" name="slider-toggle" checked>
+<input type="radio" id="btn2" name="slider-toggle">
+<input type="radio" id="btn3" name="slider-toggle">
+<div class="site-wrapper">
+	<div class="container">
+	<header class="main-header">
 			<div class="main-header-wrapper">
 				<nav class="main-navigation">
 					<ul class="main-navigation__list">
@@ -39,17 +44,24 @@
 				</p>
 			</div>
 	</header>
-	<main class="container">
+	<main>
 		<article class="main-slider">
-			<section class="main-slider__slide1">
-				<img class="main-slider__img" src="img/slider-img1.png" alt="" width="647" height="584">
-				<h2 class="main-slider__title">Крем-брюле и пломбир с малиновым джемом</h2>
-				<a class="btn main-slider__button" href="#">Дайте две</a>
+			<section class="main-slider__slide" id="slide1">
+				<h2 class="main-slider__title">Крем-брюле и пломбир<br> с малиновым джемом</h2>
+				<a class="btn main-slider__button" href="#">Давайте оба!</a>
+			</section>
+			<section class="main-slider__slide" id="slide2">
+				<h2 class="main-slider__title">Шоколадный пломбир и лимонный сорбет</h2>
+				<a class="btn main-slider__button" href="#">Давайте оба!</a>
+			</section>
+			<section class="main-slider__slide" id="slide3">
+				<h2 class="main-slider__title">Пломбир с помадкой и клубничный щербет</h2>
+				<a class="btn main-slider__button" href="#">Давайте оба!</a>
 			</section>
 			<div class="main-slider__switcher">
-				<input type="radio" name="slide1" checked>
-				<input type="radio" name="slide1">
-				<input type="radio" name="slide1">
+				<label for="btn1"></label>
+				<label for="btn2"></label>
+				<label for="btn3"></label>
 			</div>
 		</article>
 		<div class="bloks-wrapper">
@@ -65,7 +77,7 @@
 				<p class="promo-block__desc">
 					При покупке 2ух кг пломбира, добавим в ваш заказ банку вкуснейшей шоколадной присыпки совершенно бесплатно.
 				</p>
-				<a class="promo-block__button btn">Хочу варенье!</a>
+				<a class="promo-block__button btn">Хочу шоколадки!</a>
 			</section>
 		</div>
 		<section class="products">
@@ -176,7 +188,7 @@
 			</section>
 		</div>	
 		</article>
-	<footer class="main-footer container">
+	<footer class="main-footer">
 			<div class="social-icons">
 					<a class="social-icons__icon  social-icons__icon_tw" href="#"></a>
 					<a class="social-icons__icon  social-icons__icon_in" href="#"></a>
@@ -200,7 +212,8 @@
 				<a href="#">Сделано в htmlacademy &#169; 2016</a>
 			</div>
 	</footer>
-	
+	</div>
+</div>
 </body>
 </html>
 
