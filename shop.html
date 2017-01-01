@@ -16,20 +16,70 @@
 				<nav class="main-navigation">
 					<ul class="main-navigation__list">
 						<li class="main-navigation__list-string">
-							<img class="main-navigation__logo" src="img/Logo.svg" alt="логотип глейси"></a>
+							<a class="main-navigation__logo-link" href="/"><img class="main-navigation__logo" src="img/Logo.svg" alt="логотип глейси"></a>
 						</li>
-						<li class="main-navigation__list-string main-navigation__list-string_active"><a href="#">Каталог</a></li>
+						<li class="main-navigation__list-string main-navigation__submenu-item"><a href="#">Каталог</a>
+							<ul class="main-navigation__submenu-block modal">
+								<li class="main-navigation__submenu-string"><a href="#">Новинки</a></li>
+								<li class="main-navigation__submenu-string"><a href="#">Сливочное</a></li>
+								<li class="main-navigation__submenu-string"><a href="#">Щербеты</a></li>
+								<li class="main-navigation__submenu-string"><a href="#">Фруктовый лед</a></li>
+								<li class="main-navigation__submenu-string"><a href="#">Мелорин</a></li>
+							</ul>
+						</li>
 						<li class="main-navigation__list-string"><a href="#">Доставка и оплата</a></li>
 						<li class="main-navigation__list-string"><a href="#">О компании</a></li>
 					</ul>
 				</nav>
 				<div class="user-panel">
-					<div class="user-panel__search"></div>
+					<div class="user-panel__search">
+						<div class="user-panel__search-field modal">
+							<form action="#" method="get">
+								<input class="user-panel__input" type="text" name="search" placeholder="Что ищем?">
+							</form>
+						</div>
+					</div>
 					<div class="user-panel__user-login">
 						<a href="#">Вход</a>
+						<div class="user-panel__login-form-block modal">
+							<form class="user-panel__login-form" action="#" method="post">
+								<input class="user-panel__login-form-input" type="text" name="email" placeholder="Электронная почта">
+								<input class="user-panel__login-form-input" type="password" name="pass" placeholder="Пароль">
+								<div class="user-panel__login-form-wrapper">
+									<button class="user-panel__login-form-button btn" type="submit">Войти</button>
+								
+									<div class="user-panel__login-form-links">
+										<a href="#">Забыли пароль?</a>
+										<a href="#">Новая регистрация</a>
+									</div>
+								</div>
+							</form>
+						</div>
 					</div>
-					<div class="user-panel__user-cart user-panel__user-cart_active">
-						<a href="#">2 товара</a>
+					<div class="user-panel__user-cart">
+						<a href="#">Пусто</a>
+						<div class="user-panel__list-goods modal">
+							<div class="user-panel__product">
+								<i class="user-panel__product-delete"></i>
+								<img class="user-panel__img-preview" src="img/item1-min.png" alt="" title="">
+								<p class="user-panel__product-desc">Пломбир с апельсиновым джемом</p>
+								<p class="user-panel__product-calc">1,5кг x <span>200 руб</span></p>
+								<p class="user-panel__product-price">300 руб</p>
+							</div>
+							<div class="user-panel__product">
+								<i class="user-panel__product-delete"></i>
+								<img class="user-panel__img-preview" src="img/item2-min.png" alt="" title="">
+								<p class="user-panel__product-desc">Клубничный пломбир с присыпкой 
+								из белого шоколада</p>
+								<p class="user-panel__product-calc">1,5кг x <span>200 руб.</span></p>
+								<p class="user-panel__product-price">300 руб</p>
+							</div>
+							<div class="user-panel__order-detals">
+								<div class="user-panel__product-total-price">Итого <span>750</span> руб.</div>
+								<button class="user-panel__button btn" type="submit">Оформить заказ</button>
+							</div>
+
+						</div>
 					</div>
 				</div>
 			</div>
@@ -128,6 +178,7 @@
 					</div>
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<button class="product__quick-button btn" type="submit">Быстрый просмотр</button>
 			</article>
 			<article class="product">
 				<span class="product__label"></span>
@@ -139,6 +190,7 @@
 					</div>	
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<button class="product__quick-button btn" type="submit">Быстрый просмотр</button>
 			</article>
 			<article class="product">
 				<span class="product__label"></span>
@@ -150,6 +202,7 @@
 					</div>
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<button class="product__quick-button btn" type="submit">Быстрый просмотр</button>
 			</article>
 			<article class="product">
 				<span class="product__label"></span>
@@ -161,6 +214,7 @@
 					</div>
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<button class="product__quick-button btn" type="submit">Быстрый просмотр</button>
 			</article>
 			<article class="product">
 				<span class="product__label"></span>
@@ -172,6 +226,7 @@
 					</div>
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<button class="product__quick-button btn" type="submit">Быстрый просмотр</button>
 			</article>
 			<article class="product">
 				<span class="product__label"></span>
@@ -183,6 +238,7 @@
 					</div>
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<button class="product__quick-button btn" type="submit">Быстрый просмотр</button>
 			</article>
 			<article class="product">
 				<span class="product__label"></span>
@@ -194,6 +250,7 @@
 					</div>
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<button class="product__quick-button btn" type="submit">Быстрый просмотр</button>
 			</article>
 			<article class="product">
 				<span class="product__label"></span>
@@ -205,6 +262,7 @@
 					</div>
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<button class="product__quick-button btn" type="submit">Быстрый просмотр</button>
 			</article>
 			<article class="product">
 				<span class="product__label"></span>
@@ -216,6 +274,7 @@
 					</div>
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<button class="product__quick-button btn" type="submit">Быстрый просмотр</button>
 			</article>
 			<article class="product">
 				<span class="product__label"></span>
@@ -227,6 +286,7 @@
 					</div>
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<button class="product__quick-button btn" type="submit">Быстрый просмотр</button>
 			</article>
 			<article class="product">
 				<span class="product__label"></span>
@@ -238,6 +298,7 @@
 					</div>
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<button class="product__quick-button btn" type="submit">Быстрый просмотр</button>
 			</article>
 			<article class="product">
 				<span class="product__label"></span>
@@ -249,6 +310,7 @@
 					</div>
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<button class="product__quick-button btn" type="submit">Быстрый просмотр</button>
 			</article>
 		</section>
 		<div class="pagination">

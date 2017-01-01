@@ -20,7 +20,7 @@
 				<nav class="main-navigation">
 					<ul class="main-navigation__list">
 						<li class="main-navigation__list-string">
-							<img class="main-navigation__logo" src="img/Logo.svg" alt="логотип глейси"></a>
+							<img class="main-navigation__logo" src="img/Logo.svg" alt="логотип глейси">
 						</li>
 						<li class="main-navigation__list-string main-navigation__submenu-item"><a href="#">Каталог</a>
 							<ul class="main-navigation__submenu-block modal">
@@ -38,7 +38,9 @@
 				<div class="user-panel">
 					<div class="user-panel__search">
 						<div class="user-panel__search-field modal">
-							<input class="user-panel__input" type="text" name="search" placeholder="Что ищем?">
+							<form action="#" method="get">
+								<input class="user-panel__input" type="text" name="search" placeholder="Что ищем?">
+							</form>
 						</div>
 					</div>
 					<div class="user-panel__user-login">
@@ -72,7 +74,7 @@
 								<i class="user-panel__product-delete"></i>
 								<img class="user-panel__img-preview" src="img/item2-min.png" alt="" title="">
 								<p class="user-panel__product-desc">Клубничный пломбир с присыпкой 
-из белого шоколада</p>
+								из белого шоколада</p>
 								<p class="user-panel__product-calc">1,5кг x <span>200 руб.</span></p>
 								<p class="user-panel__product-price">300 руб</p>
 							</div>
@@ -118,14 +120,14 @@
 				<p class="promo-block__desc">
 					При покупке 2ух кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.
 				</p>
-				<a class="promo-block__button btn">Хочу варенье!</a>
+				<a class="promo-block__button btn" href="#">Хочу варенье!</a>
 			</section>
 			<section class="promo-block promo-block_choco">
 				<b class="promo-block__title">Шоколадки даром!</b>
 				<p class="promo-block__desc">
 					При покупке 2ух кг пломбира, добавим в ваш заказ банку вкуснейшей шоколадной присыпки совершенно бесплатно.
 				</p>
-				<a class="promo-block__button btn">Хочу шоколадки!</a>
+				<a class="promo-block__button btn" href="#">Хочу шоколадки!</a>
 			</section>
 		</div>
 		<section class="products">
@@ -138,6 +140,7 @@
 					</div>
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<button class="product__quick-button btn" type="submit">Быстрый просморт</button>
 			</article>
 			<article class="product">
 				<div class="product__image-block product__image-block_hit">
@@ -148,6 +151,7 @@
 				</div>
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<button class="product__quick-button btn" type="submit">Быстрый просморт</button>
 			</article>
 			<article class="product">
 				<div class="product__image-block product__image-block_hit">
@@ -158,6 +162,7 @@
 				</div>
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<button class="product__quick-button btn" type="submit">Быстрый просморт</button>
 			</article>
 			<article class="product">
 				<div class="product__image-block product__image-block_hit">
@@ -168,6 +173,7 @@
 				</div>
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<button class="product__quick-button btn" type="submit">Быстрый просморт</button>
 			</article>
 		</section>
 		<article class="advantages">
@@ -215,7 +221,8 @@
 			</article>
 		</div>
 	</main>
-</div>	
+	</div>
+	
 	<article class="map">
 		<section class="map__address-block">
 				<p class="map__address-details">
@@ -231,34 +238,33 @@
 				<a class="map__button btn">Форма обратной связи</a>
 			</section>
 	</article>
-<div class="site-wrapper">
-	<div class="container">	
-	<footer class="main-footer">
-			<div class="social-icons">
-					<a class="social-icons__icon  social-icons__icon_tw" href="#"></a>
-					<a class="social-icons__icon  social-icons__icon_in" href="#"></a>
-					<a class="social-icons__icon  social-icons__icon_fb" href="#"></a>
-					<a class="social-icons__icon  social-icons__icon_vk" href="#"></a>
-			</div>
-			<nav class="footer-navigation">
-				<ul class="footer-navigation__list">
-					<li class="footer-navigation__list-item footer-navigation__list-item_bg-heart">
-					    <a href="#"><b>Для поставщиков</b></a>
-					</li>
-					<li class="footer-navigation__list-item"><a href="#">О производстве</a></li>
-				</ul>
-				<ul class="footer-navigation__list">
-					<li class="footer-navigation__list-item"><a href="#">Наши документы</a></li>
-					<li class="footer-navigation__list-item"><a href="#">Экологические стандарты</a></li>
-				</ul>
-			</nav>
-			<div class="developers">
-				<img class="developers__img" src="img/developer-logo.png" alt="Логотип разработчиков" width="108" height="38">
-				<a href="#">Сделано в htmlacademy &#169; 2016</a>
-			</div>
-	</footer>
-	</div>
-</div>
+		<div class="container">	
+		<footer class="main-footer">
+				<div class="social-icons">
+						<a class="social-icons__icon  social-icons__icon_tw" href="#"></a>
+						<a class="social-icons__icon  social-icons__icon_in" href="#"></a>
+						<a class="social-icons__icon  social-icons__icon_fb" href="#"></a>
+						<a class="social-icons__icon  social-icons__icon_vk" href="#"></a>
+				</div>
+				<nav class="footer-navigation">
+					<ul class="footer-navigation__list">
+						<li class="footer-navigation__list-item footer-navigation__list-item_bg-heart">
+						    <a href="#"><b>Для поставщиков</b></a>
+						</li>
+						<li class="footer-navigation__list-item"><a href="#">О производстве</a></li>
+					</ul>
+					<ul class="footer-navigation__list">
+						<li class="footer-navigation__list-item"><a href="#">Наши документы</a></li>
+						<li class="footer-navigation__list-item"><a href="#">Экологические стандарты</a></li>
+					</ul>
+				</nav>
+				<div class="developers">
+					<img class="developers__img" src="img/developer-logo.png" alt="Логотип разработчиков" width="108" height="38">
+					<a href="#">Сделано в htmlacademy &#169; 2016</a>
+				</div>
+		</footer>
+		</div>
+</div>		
 </body>
 </html>
 
