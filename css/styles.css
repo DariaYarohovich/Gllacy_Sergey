@@ -22,8 +22,7 @@ a:active {
 }
 
 .site-wrapper {
-	background: url(../img/slider-img1.png) no-repeat;
-	background-position: 50% 0;
+	background: url(../img/slide-1.png) no-repeat 50% 0;
 
 	transition: 
 	background-image 0.5s ease,
@@ -248,12 +247,9 @@ a:active {
 	cursor: pointer;
 }
 
-.user-panel__search:hover .user-panel__search-field {
-	display: block;
-}
 
 .user-panel__search-field {
-	display: none;
+	display: block;
 	top: 36px;
 	right: 0;
 }
@@ -311,12 +307,9 @@ a:active {
 	color: black;
 }
 
-.user-panel__user-login:hover .user-panel__login-form-block {
-	display: block;
-}
 
 .user-panel__login-form-block {
-	display: none;
+	display: block;
     padding: 20px;
     width: 277px;
     right: 0;
@@ -364,10 +357,6 @@ a:active {
 	position: relative;
 }
 
-.user-panel__user-cart:hover .user-panel__list-goods {
-	display: block;
-}
-
 
 .user-panel__user-cart > a {
 	position: relative;
@@ -412,7 +401,7 @@ a:active {
 }
 
 .user-panel__list-goods {
-	display: none;
+	display: block;
 	box-sizing: border-box;
 	width: 540px;
 	top: 34px;
@@ -1358,4 +1347,45 @@ input[type="checkbox"]:checked + label::after {
 
 .pagination__item_activ > a {
 	color: black;
+}
+
+/* <====================== additional styles ========================>*/
+.hide {
+	display: none;
+}
+
+@keyframes show_gently {
+	0% {
+		 opacity: 0;
+	 }
+	25% {
+		opacity: 0.25;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	75% {
+		opacity: 0.75;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes hide_gently {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0.75;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	75% {
+		opacity: 0.25;
+	}
+	100% {
+		opacity: 0;
+	}
 }
