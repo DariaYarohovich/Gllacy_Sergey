@@ -223,7 +223,7 @@
 	</main>
 	</div>
 	
-	<article class="map">
+	<article class="map" id="map">
 		<section class="map__address-block">
 				<p class="map__address-details">
 					Адрес главного офиса и<br>
@@ -264,8 +264,23 @@
 				</div>
 		</footer>
 		</div>
-</div>		
+        
+</div>
+<div class="popup-background"></div>
+        <div class="feedback-block modal">
+        	<div class="feedback-block__close"></div>
+			<p class="feedback-block__title">Мы обязательно вам ответим!</p>
+			<form class="feedback-block__form">
+				<span class="feedback-block__input-name hide">Как вас зовут?</span>
+				<label><input class="feedback-block__input" type="text" name="name" placeholder="Как вас зовут?"></label>
+				<span class="feedback-block__input-name hide">Как вас зовут?</span>
+				<label><input class="feedback-block__input" type="text" name="email" placeholder="Ваша почта для ответа?"></label>
+				<textarea class="feedback-block__textarea">Напишите что-нибудь...</textarea>
+				<button class="feedback-block__button btn">Отправить</button>
+			</form>
+        </div>
 </body>
+<script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
 <script src="js/scripts.js"></script>
 </html>
 

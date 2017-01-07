@@ -894,20 +894,22 @@ body > input[type="radio"] {
 .map {
 	height: 430px;
 	width: 100%;
-	background: url(../img/map.jpg) repeat-x;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+	display: block;
+	position: relative;
 }
 
 .map__address-block {
+	position: absolute;
+	top: 63px;
+	right: 28px;
+	z-index: 2;
 	box-sizing: border-box;
     min-height: 305px;
     width: 303px;
     padding: 22px 27px;
 
     background-color: white;
-    margin-right: 7.5%;
+    margin-right: 6%;
     border-radius: 20px;
     color: black;
     font-size: 14px;
@@ -1388,4 +1390,100 @@ input[type="checkbox"]:checked + label::after {
 	100% {
 		opacity: 0;
 	}
+}
+
+.popup-background {
+	position: fixed;
+	top: 0;
+	display: block;
+	z-index: 5;
+	background: black;
+	opacity: 0.5;
+	height: 100%;
+	width: 100%;
+
+}
+
+.feedback-block {
+	transform: translate(-50%, 0);
+    left: 50%;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 478px;
+    box-sizing: border-box;
+    padding: 25px;
+
+}
+
+.feedback-block__close {
+	display: block;
+	width: 19px;
+	height: 19px;
+	background: lightblue;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.feedback-block__close::before {
+	content: "";
+	background: black;
+	width: 1px;
+	height: 19px;
+	transform: rotate(45deg);
+	display: block;
+    position: absolute;
+    left: 50%;
+}
+
+.feedback-block__close::after {
+	content: "";
+    background: black;
+    width: 1px;
+    height: 19px;
+    transform: rotate(-45deg);
+    display: block;
+    position: absolute;
+    left: 50%;
+}
+
+.feedback-block__title {
+	color: black;
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 20px;
+}
+
+.feedback-block__form {
+	display: flex;
+	flex-direction: column;
+}
+
+.feedback-block__input {
+	width: 265px;
+    box-sizing: border-box;
+    height: 42px;
+    margin-bottom: 20px;
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+    padding: 0;
+    padding-left: 14px;
+}
+
+.feedback-block__textarea {
+	width: 100%;
+    min-height: 154px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 14px;
+    color: #a0a0a0;
+}
+
+.feedback-block__button {
+	align-self: flex-end;
+	border: none;
 }
