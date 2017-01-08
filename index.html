@@ -2,32 +2,88 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Gllacy Shop</title>
+	<title>Gllacy Index</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-	<header class="main-header container">
+<input type="radio" id="btn1" name="slider-toggle" checked>
+<input type="radio" id="btn2" name="slider-toggle">
+<input type="radio" id="btn3" name="slider-toggle">
+<div class="site-wrapper">
+	<div class="container">
+	<header class="main-header">
 			<div class="main-header-wrapper">
 				<nav class="main-navigation">
 					<ul class="main-navigation__list">
 						<li class="main-navigation__list-string">
-							<a href="#"><img class="main-navigation__logo" src="img/Logo.svg" alt="логотип глейси"></a>
+							<img class="main-navigation__logo" src="img/Logo.svg" alt="логотип глейси">
 						</li>
-						<li class="main-navigation__list-string"><a href="#">Каталог</a></li>
+						<li class="main-navigation__list-string main-navigation__submenu-item"><a href="#">Каталог</a>
+							<ul class="main-navigation__submenu-block modal">
+								<li class="main-navigation__submenu-string"><a href="#">Новинки</a></li>
+								<li class="main-navigation__submenu-string"><a href="#">Сливочное</a></li>
+								<li class="main-navigation__submenu-string"><a href="#">Щербеты</a></li>
+								<li class="main-navigation__submenu-string"><a href="#">Фруктовый лед</a></li>
+								<li class="main-navigation__submenu-string"><a href="#">Мелорин</a></li>
+							</ul>
+						</li>
 						<li class="main-navigation__list-string"><a href="#">Доставка и оплата</a></li>
 						<li class="main-navigation__list-string"><a href="#">О компании</a></li>
 					</ul>
 				</nav>
 				<div class="user-panel">
-					<div class="user-panel__search"></div>
+					<div class="user-panel__search">
+						<div class="user-panel__search-field modal hide">
+							<form action="#" method="get">
+								<input class="user-panel__input" type="text" name="search" placeholder="Что ищем?">
+							</form>
+						</div>
+					</div>
 					<div class="user-panel__user-login">
 						<a href="#">Вход</a>
+						<div class="user-panel__login-form-block modal hide">
+							<form class="user-panel__login-form" action="#" method="post">
+								<input class="user-panel__login-form-input" type="text" name="email" placeholder="Электронная почта">
+								<input class="user-panel__login-form-input" type="password" name="pass" placeholder="Пароль">
+								<div class="user-panel__login-form-wrapper">
+									<button class="user-panel__login-form-button btn" type="submit">Войти</button>
+								
+									<div class="user-panel__login-form-links">
+										<a href="#">Забыли пароль?</a>
+										<a href="#">Новая регистрация</a>
+									</div>
+								</div>
+							</form>
+						</div>
 					</div>
 					<div class="user-panel__user-cart">
 						<a href="#">Пусто</a>
+						<div class="user-panel__list-goods modal hide">
+							<div class="user-panel__product">
+								<i class="user-panel__product-delete"></i>
+								<img class="user-panel__img-preview" src="img/item1-min.png" alt="" title="">
+								<p class="user-panel__product-desc">Пломбир с апельсиновым джемом</p>
+								<p class="user-panel__product-calc">1,5кг x <span>200 руб</span></p>
+								<p class="user-panel__product-price">300 руб</p>
+							</div>
+							<div class="user-panel__product">
+								<i class="user-panel__product-delete"></i>
+								<img class="user-panel__img-preview" src="img/item2-min.png" alt="" title="">
+								<p class="user-panel__product-desc">Клубничный пломбир с присыпкой 
+								из белого шоколада</p>
+								<p class="user-panel__product-calc">1,5кг x <span>200 руб.</span></p>
+								<p class="user-panel__product-price">300 руб</p>
+							</div>
+							<div class="user-panel__order-detals">
+								<div class="user-panel__product-total-price">Итого <span>750</span> руб.</div>
+								<button class="user-panel__button btn" type="submit">Оформить заказ</button>
+							</div>
+
+						</div>
 					</div>
 				</div>
 			</div>
@@ -38,79 +94,86 @@
 				</p>
 			</div>
 	</header>
-	<main class="container">
+	<main>
 		<article class="main-slider">
-			<section class="main-slider__slide1">
-				<img class="main-slider__img" src="img/slider-img1.png" alt="" width="647" height="584">
-				<h2 class="main-slider__title">Крем-брюле и пломбир с малиновым джемом</h2>
-				<a class="btn main-slider__button" href="#">Дайте две</a>
+			<section class="main-slider__slide" id="slide1">
+				<h2 class="main-slider__title">Крем-брюле и пломбир<br> с малиновым джемом</h2>
+				<a class="btn main-slider__button" href="#">Давайте оба!</a>
+			</section>
+			<section class="main-slider__slide" id="slide2">
+				<h2 class="main-slider__title">Шоколадный пломбир и лимонный сорбет</h2>
+				<a class="btn main-slider__button" href="#">Давайте оба!</a>
+			</section>
+			<section class="main-slider__slide" id="slide3">
+				<h2 class="main-slider__title">Пломбир с помадкой и клубничный щербет</h2>
+				<a class="btn main-slider__button" href="#">Давайте оба!</a>
 			</section>
 			<div class="main-slider__switcher">
-				<input type="radio" name="slide1" checked>
-				<input type="radio" name="slide1">
-				<input type="radio" name="slide1">
+				<label for="btn1"></label>
+				<label for="btn2"></label>
+				<label for="btn3"></label>
 			</div>
 		</article>
 		<div class="bloks-wrapper">
-			<section class="promo-block promo-block_raspb"> <!-- Уточнить -->
+			<section class="promo-block promo-block_raspb"> 
 				<b class="promo-block__title">Малинка даром!</b>
 				<p class="promo-block__desc">
 					При покупке 2ух кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.
 				</p>
-				<a class="promo-block__button btn">Хочу варенье!</a>
+				<a class="promo-block__button btn" href="#">Хочу варенье!</a>
 			</section>
 			<section class="promo-block promo-block_choco">
 				<b class="promo-block__title">Шоколадки даром!</b>
 				<p class="promo-block__desc">
 					При покупке 2ух кг пломбира, добавим в ваш заказ банку вкуснейшей шоколадной присыпки совершенно бесплатно.
 				</p>
-				<a class="promo-block__button btn">Хочу варенье!</a>
+				<a class="promo-block__button btn" href="#">Хочу шоколадки!</a>
 			</section>
 		</div>
 		<section class="products">
 			<article class="product">
-				<span class="product__label"></span>
-				<div class="product__image-block">
+				<div class="product__image-block product__image-block_hit">
 					<img class="product__image" src="img/item1.png" alt="">
-				</div>
-				<div class="product__price">
+					<div class="product__price">
 					380
-					<span class="product__units">/кг</span>
+						<span class="product__units">/кг</span>
+					</div>
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<button class="product__quick-button btn" type="submit">Быстрый просморт</button>
 			</article>
 			<article class="product">
-				<span class="product__label"></span>
-				<div class="product__image-block">
+				<div class="product__image-block product__image-block_hit">
 					<img class="product__image" src="img/item2.png" alt="">
-				</div>
-				<div class="product__price">
+					<div class="product__price">
 					380
-					<span class="product__units">/кг</span>
+						<span class="product__units">/кг</span>
+				</div>
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<button class="product__quick-button btn" type="submit">Быстрый просморт</button>
 			</article>
 			<article class="product">
-				<span class="product__label"></span>
-				<div class="product__image-block">
+				<div class="product__image-block product__image-block_hit">
 					<img class="product__image" src="img/item3.png" alt="">
-				</div>
-				<div class="product__price">
+					<div class="product__price">
 					380
-					<span class="product__units">/кг</span>
+						<span class="product__units">/кг</span>
+				</div>
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<button class="product__quick-button btn" type="submit">Быстрый просморт</button>
 			</article>
 			<article class="product">
-				<span class="product__label"></span>
-				<div class="product__image-block">
+				<div class="product__image-block product__image-block_hit">
 					<img class="product__image" src="img/item4.png" alt="">
-				</div>
-				<div class="product__price">
+					<div class="product__price">
 					380
-					<span class="product__units">/кг</span>
+						<span class="product__units">/кг</span>
+				</div>
 				</div>
 				<a class="product__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<button class="product__quick-button btn" type="submit">Быстрый просморт</button>
 			</article>
 		</section>
 		<article class="advantages">
@@ -130,7 +193,7 @@
 			</div>
 			<div class="advantages__item advantages__item_bg-cow">
 				<p class="advantages__desc">
-					Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+					Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья
 				</p>
 			</div>
 			<div class="advantages__item advantages__item_bg-degree">
@@ -141,13 +204,13 @@
 			</div>
 		</article>
 		<div class="bloks-wrapper">
-			<article class="blog-news">
+			<article class="promo-block blog-news">
 				<span class="blog-news__title">Новое в нашем блоге</span>
 				<p class="blog-news__desc">
-					<a href="#">10 способов серверовки фруктовых щербетов к столу</a>
+					<a href="#">10 способов серверовки<br> фруктовых щербетов<br> к столу</a>
 				</p>
 			</article>
-			<article class="subscribe">
+			<article class="promo-block subscribe">
 				<p class="subscribe__desc">
 					Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) 
 				</p>
@@ -158,9 +221,10 @@
 			</article>
 		</div>
 	</main>
-	<article class="map">
-		<div class="container">
-			<section class="map__address-block">
+	</div>
+	
+	<article class="map" id="map">
+		<section class="map__address-block">
 				<p class="map__address-details">
 					Адрес главного офиса и<br>
 					офлайн магазина:<br>
@@ -173,33 +237,50 @@
 				</p>
 				<a class="map__button btn">Форма обратной связи</a>
 			</section>
-		</div>	
-		</article>
-	<footer class="main-footer container">
-			<div class="social-icons">
-					<a class="social-icons__icon  social-icons__icon_tw" href="#"></a>
-					<a class="social-icons__icon  social-icons__icon_in" href="#"></a>
-					<a class="social-icons__icon  social-icons__icon_fb" href="#"></a>
-					<a class="social-icons__icon  social-icons__icon_vk" href="#"></a>
-			</div>
-			<nav class="footer-navigation">
-				<ul class="footer-navigation__list">
-					<li class="footer-navigation__list-item footer-navigation__list-item_bg-heart">
-					    <a href="#"><b>Для поставщиков</b></a>
-					</li>
-					<li class="footer-navigation__list-item"><a href="#">О производстве</a></li>
-				</ul>
-				<ul class="footer-navigation__list">
-					<li class="footer-navigation__list-item"><a href="#">Наши документы</a></li>
-					<li class="footer-navigation__list-item"><a href="#">Экологические стандарты</a></li>
-				</ul>
-			</nav>
-			<div class="developers">
-				<img class="developers__img" src="img/developer-logo.png" alt="Логотип разработчиков" width="108" height="38">
-				<a href="#">Сделано в htmlacademy &#169; 2016</a>
-			</div>
-	</footer>
-	
+	</article>
+		<div class="container">	
+		<footer class="main-footer">
+				<div class="social-icons">
+						<a class="social-icons__icon  social-icons__icon_tw" href="#"></a>
+						<a class="social-icons__icon  social-icons__icon_in" href="#"></a>
+						<a class="social-icons__icon  social-icons__icon_fb" href="#"></a>
+						<a class="social-icons__icon  social-icons__icon_vk" href="#"></a>
+				</div>
+				<nav class="footer-navigation">
+					<ul class="footer-navigation__list">
+						<li class="footer-navigation__list-item footer-navigation__list-item_bg-heart">
+						    <a href="#"><b>Для поставщиков</b></a>
+						</li>
+						<li class="footer-navigation__list-item"><a href="#">О производстве</a></li>
+					</ul>
+					<ul class="footer-navigation__list">
+						<li class="footer-navigation__list-item"><a href="#">Наши документы</a></li>
+						<li class="footer-navigation__list-item"><a href="#">Экологические стандарты</a></li>
+					</ul>
+				</nav>
+				<div class="developers">
+					<img class="developers__img" src="img/developer-logo.png" alt="Логотип разработчиков" width="108" height="38">
+					<a href="#">Сделано в htmlacademy &#169; 2016</a>
+				</div>
+		</footer>
+		</div>
+        
+</div>
+<div class="popup-background"></div>
+        <div class="feedback-block modal">
+        	<div class="feedback-block__close"></div>
+			<p class="feedback-block__title">Мы обязательно вам ответим!</p>
+			<form class="feedback-block__form">
+				<span class="feedback-block__input-name hide">Как вас зовут?</span>
+				<label><input class="feedback-block__input" type="text" name="name" placeholder="Как вас зовут?"></label>
+				<span class="feedback-block__input-name hide">Как вас зовут?</span>
+				<label><input class="feedback-block__input" type="text" name="email" placeholder="Ваша почта для ответа?"></label>
+				<textarea class="feedback-block__textarea">Напишите что-нибудь...</textarea>
+				<button class="feedback-block__button btn">Отправить</button>
+			</form>
+        </div>
 </body>
+<script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+<script src="js/scripts.js"></script>
 </html>
 
