@@ -33,18 +33,24 @@
 				</nav>
 				<div class="user-panel">
 					<div class="user-panel__search">
-						<div class="user-panel__search-field modal">
+						<div class="user-panel__search-field modal hide">
 							<form action="#" method="get">
-								<input class="user-panel__input" type="text" name="search" placeholder="Что ищем?">
+								<label>
+								<input class="user-panel__input user-panel__input_search" type="text" name="search" placeholder="Что ищем?">
+								</label>
 							</form>
 						</div>
 					</div>
 					<div class="user-panel__user-login">
 						<a href="#">Вход</a>
-						<div class="user-panel__login-form-block modal">
+						<div class="user-panel__login-form-block modal hide">
 							<form class="user-panel__login-form" action="#" method="post">
-								<input class="user-panel__login-form-input" type="text" name="email" placeholder="Электронная почта">
-								<input class="user-panel__login-form-input" type="password" name="pass" placeholder="Пароль">
+								<label>
+									<input class="user-panel__login-form-input user-panel__login-form-input_first" type="text" name="email" placeholder="Электронная почта">
+								</label>
+								<label>
+									<input class="user-panel__login-form-input user-panel__login-form-input_second" type="password" name="pass" placeholder="Пароль">
+								</label>
 								<div class="user-panel__login-form-wrapper">
 									<button class="user-panel__login-form-button btn" type="submit">Войти</button>
 								
@@ -58,7 +64,7 @@
 					</div>
 					<div class="user-panel__user-cart">
 						<a href="#">Пусто</a>
-						<div class="user-panel__list-goods modal">
+						<div class="user-panel__list-goods modal hide">
 							<div class="user-panel__product">
 								<i class="user-panel__product-delete"></i>
 								<img class="user-panel__img-preview" src="img/item1-min.png" alt="" title="">
@@ -350,7 +356,21 @@
 				<a href="#">Сделано в htmlacademy &#169; 2016</a>
 			</div>
 	</footer>
-</div>	
+</div>
+<div class="popup-background hide"></div>
+        <div class="feedback-block modal hide">
+        	<div class="feedback-block__close"></div>
+			<p class="feedback-block__title">Мы обязательно вам ответим!</p>
+			<form class="feedback-block__form">
+				<label><input class="feedback-block__input feedback-block__input_first" type="text" name="name" placeholder="Как вас зовут?"></label>
+				<label><input class="feedback-block__input feedback-block__input_second" type="text" name="email" placeholder="Ваша почта для ответа?">
+				</label>
+				<textarea class="feedback-block__textarea">Напишите что-нибудь...</textarea>
+				<button class="feedback-block__button btn">Отправить</button>
+			</form>
+        </div>
+</body>
+<script src="js/scripts.js"></script>	
 </body>
 </html>
 

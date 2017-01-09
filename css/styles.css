@@ -21,6 +21,25 @@ a:active {
 	color: #ffbc9e;
 }
 
+input[type="text"]:focus {
+	outline: none;
+}
+
+label {
+	position: relative;
+	display: block;
+}
+
+.input-hint {
+	color: #5b9ddf;
+    position: absolute;
+    top: -15px;
+    left: 14px;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: normal;
+}
+
 .site-wrapper {
 	background: url(../img/slide-1.png) no-repeat 50% 0;
 
@@ -271,6 +290,10 @@ a:active {
     border: 2px solid #d3d3d2;
 }
 
+.user-panel__input:focus {
+	border: 2px solid #8fbdec;
+}
+
 .user-panel__user-login {
 	margin: 0 10px 5px 0;
 	position: relative;
@@ -329,6 +352,10 @@ a:active {
 
 .user-panel__login-form-input:hover {
 	border: 2px solid #d3d3d2;
+}
+
+.user-panel__login-form-input:focus {
+	border: 2px solid #8fbdec;
 }
 
 .user-panel__login-form-button {
@@ -1352,10 +1379,6 @@ input[type="checkbox"]:checked + label::after {
 }
 
 /* <====================== additional styles ========================>*/
-.hide {
-	display: none;
-}
-
 @keyframes show_gently {
 	0% {
 		 opacity: 0;
@@ -1407,7 +1430,8 @@ input[type="checkbox"]:checked + label::after {
 .feedback-block {
 	transform: translate(-50%, 0);
     left: 50%;
-    top: 150px;
+    top: 100px;
+    position: fixed;
     display: flex;
     flex-direction: column;
     width: 478px;
@@ -1418,9 +1442,8 @@ input[type="checkbox"]:checked + label::after {
 
 .feedback-block__close {
 	display: block;
-	width: 19px;
-	height: 19px;
-	background: lightblue;
+	width: 20px;
+	height: 20px;
 	position: absolute;
 	top: 15px;
 	right: 15px;
@@ -1431,10 +1454,9 @@ input[type="checkbox"]:checked + label::after {
 	background: black;
 	width: 1px;
 	height: 19px;
-	transform: rotate(45deg);
+	transform: translate(10px, 0) rotate(45deg);
 	display: block;
     position: absolute;
-    left: 50%;
 }
 
 .feedback-block__close::after {
@@ -1442,10 +1464,9 @@ input[type="checkbox"]:checked + label::after {
     background: black;
     width: 1px;
     height: 19px;
-    transform: rotate(-45deg);
+    transform: translate(10px, 0) rotate(-45deg);
     display: block;
     position: absolute;
-    left: 50%;
 }
 
 .feedback-block__title {
@@ -1471,6 +1492,14 @@ input[type="checkbox"]:checked + label::after {
     padding-left: 14px;
 }
 
+.feedback-block__input:hover {
+	border: 2px solid #d3d3d2;
+}
+
+.feedback-block__input:focus {
+	border: 2px solid #8fbdec;
+}
+
 .feedback-block__textarea {
 	width: 100%;
     min-height: 154px;
@@ -1486,4 +1515,12 @@ input[type="checkbox"]:checked + label::after {
 .feedback-block__button {
 	align-self: flex-end;
 	border: none;
+}
+
+.feedback-block__close:hover {
+	cursor: pointer;
+}
+
+.hide {
+	display: none;
 }
