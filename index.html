@@ -7,7 +7,7 @@
 	<meta name="keywords" content="">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.min.css">
 </head>
 <body>
 <input type="radio" id="btn1" name="slider-toggle" checked>
@@ -39,7 +39,9 @@
 					<div class="user-panel__search">
 						<div class="user-panel__search-field modal hide">
 							<form action="#" method="get">
-								<input class="user-panel__input" type="text" name="search" placeholder="Что ищем?">
+								<label>
+								<input class="user-panel__input user-panel__input_search" type="text" name="search" placeholder="Что ищем?">
+								</label>
 							</form>
 						</div>
 					</div>
@@ -47,8 +49,12 @@
 						<a href="#">Вход</a>
 						<div class="user-panel__login-form-block modal hide">
 							<form class="user-panel__login-form" action="#" method="post">
-								<input class="user-panel__login-form-input" type="text" name="email" placeholder="Электронная почта">
-								<input class="user-panel__login-form-input" type="password" name="pass" placeholder="Пароль">
+								<label>
+									<input class="user-panel__login-form-input user-panel__login-form-input_first" type="text" name="email" placeholder="Электронная почта">
+								</label>
+								<label>
+									<input class="user-panel__login-form-input user-panel__login-form-input_second" type="password" name="pass" placeholder="Пароль">
+								</label>
 								<div class="user-panel__login-form-wrapper">
 									<button class="user-panel__login-form-button btn" type="submit">Войти</button>
 								
@@ -266,21 +272,50 @@
 		</div>
         
 </div>
-<div class="popup-background"></div>
-        <div class="feedback-block modal">
+<div class="popup-background hide"></div>
+        <div class="feedback-block modal hide">
         	<div class="feedback-block__close"></div>
 			<p class="feedback-block__title">Мы обязательно вам ответим!</p>
 			<form class="feedback-block__form">
-				<span class="feedback-block__input-name hide">Как вас зовут?</span>
-				<label><input class="feedback-block__input" type="text" name="name" placeholder="Как вас зовут?"></label>
-				<span class="feedback-block__input-name hide">Как вас зовут?</span>
-				<label><input class="feedback-block__input" type="text" name="email" placeholder="Ваша почта для ответа?"></label>
+				<label><input class="feedback-block__input feedback-block__input_first" type="text" name="name" placeholder="Как вас зовут?"></label>
+				<label><input class="feedback-block__input feedback-block__input_second" type="text" name="email" placeholder="Ваша почта для ответа?">
+				</label>
 				<textarea class="feedback-block__textarea">Напишите что-нибудь...</textarea>
 				<button class="feedback-block__button btn">Отправить</button>
 			</form>
         </div>
 </body>
 <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
-<script src="js/scripts.js"></script>
+<script type="text/javascript">
+	/*================MAP=================*/
+ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+            center: [59.939168, 30.328262],
+            zoom: 16
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+        myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
+
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: "img/icecream-marker.png",
+            // Размеры метки.
+            iconImageSize: [218, 142],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-47, -142]
+        });
+
+    myMap.geoObjects.add(myPlacemark);
+
+});
+
+/*================ MAP END =================*/
+</script>
+<script src="js/scripts.min.js"></script>
 </html>
 
